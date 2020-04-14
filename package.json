@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "css-loader": "^3.5.2",
     "node-sass": "^4.13.1",
@@ -17,10 +19,11 @@
   },
   "scripts": {
     "clean": "rm dist/*",
-    "build-dev": "webpack -d --mode development",
-    "build-prod": "webpack -p --mode production",
-    "start": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack -d --mode development",
+    "build:prod": "webpack -p --mode production",
+    "start:dev": "webpack-dev-server",
+    "start": "node server.js",
+    "test": "npm run build:prod"
   },
   "repository": {
     "type": "git",

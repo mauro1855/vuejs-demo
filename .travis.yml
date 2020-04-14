@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 12
+
+deploy:
+  provider: heroku
+  api_key: "b748531f-47cf-40a3-a336-70cf5f70578c"
+  app: mvue
+  skip_cleanup: true
