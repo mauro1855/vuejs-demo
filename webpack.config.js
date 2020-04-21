@@ -1,9 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const config = {
-  entry: './src/index.js',
+  entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -17,10 +18,15 @@ const config = {
           'css-loader',
           'sass-loader'
         ]
-      }
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
     ]
   },
   plugins: [
+    new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       template: `src/index.html`,
       filename: './index.html',
