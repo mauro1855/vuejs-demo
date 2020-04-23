@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-  - 12
-
+- 12
 deploy:
   provider: heroku
-  api_key: "b748531f-47cf-40a3-a336-70cf5f70578c"
+  api_key:
+    secure: T/qhogr+T+P4UM867sYiwhu59GztF3MKYL9YxnelQYe/DbAdU1puADzJGJY94KSUVsjA/lgoefYnSCHDCA5/sLaHRy6xaJ1mtzxkpn2Kp7P68XAaD5ZTvgSDpqm7Kwpq/DXDrt2/WpVjETB9IotOVULc3Jp1BIaw2CILGIy4YjKtfiO0OsMyFfWJ34vw9Ltk+ztHZStPO6J84NqhMdrv8KoRDMAHXNKpd1kjtSZf4/5BVYFN1LxLre4wKJzIeLQm1XxraDCS5WshemYIFWLxDFVY1KBcGKmUy6IIFWJdZSnyyYh1TgXhX4V4aPSxlgCyRGUUDlUvwSHjLRtgzopRD8AFribkdCnhumpWK1eqZ6AZ5mGXF9TJAjwI01uuFkIjRcGi0iFgicuHK3CqiPynVmpTu46XMKMvZMsMy5XsN/Lgun0Qvd/0y9Qw1v87aJ4/4lnAM2K92BHFRvzYbcxa6J7dj1FTbeqXudf/RMrQu4Z6kg36zY5caKVRy5QPG1GSqREGcwH3CNZouP81FTOuRsu8FpdOYfLfmQEP9KMhDpbfaru3dp+Yc3DxrL8J9qPCkDhYN5AbB+AgJjjQU/UhdLp779nygq93FikEeMxjX0IbetFA91QuysUIiySor8wQQuoAYr879DE3uqCD8WX977w+ucnsMokB+DxgLqU1Oi0=
   app: mvue
   skip_cleanup: true
